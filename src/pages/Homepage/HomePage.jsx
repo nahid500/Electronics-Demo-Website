@@ -1,8 +1,10 @@
-import Navbar from '../../components/navbar'
+import Navbar from '../../components/NavBar'
 import Carousel from '../../components/Carousel'
 import CategoriesCard from '../../components/Categories'
 import Footer from '../../components/Footer'
-import Products from '../../components/Products'
+import ProductComponent from '../../components/ProductComponent'
+import Partners from '../../components/Partners'
+import Image from '../../components/Image'
 
 const HomePage = () => {
     return (
@@ -13,10 +15,15 @@ const HomePage = () => {
 
             <Carousel/>
 
+
             <CategoriesCard/>
 
-            <Products/>
 
+            <Image/>
+            
+            <ProductComponent/>
+
+            <Partners/>
             
             <Footer/>
         </div>

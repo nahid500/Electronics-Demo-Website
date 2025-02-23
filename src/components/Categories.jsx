@@ -11,6 +11,8 @@ const categories = [
 
 const CategoriesCard = () => {
     return (
+        <>
+        <h1 className="text-3xl font-bold text-center mb-6" >Product Categories</h1>
         <Grid container spacing={3} justifyContent="center" alignItems="center" style={{ minHeight: "20vh", backgroundColor: "#f5f5f5", padding: "20px" }}>
             {categories.map((category, index) => (
                 <Grid item xs={12} sm={6} md={4} lg={2} key={index}>
@@ -26,7 +28,7 @@ const CategoriesCard = () => {
                             transition: "0.3s",
                             "&:hover": { boxShadow: 6 },
                         }}
-                    >
+                        >
                         {category.icon}
                         <CardContent>
                             <Typography variant="h6" color="textPrimary">
@@ -37,6 +39,7 @@ const CategoriesCard = () => {
                 </Grid>
             ))}
         </Grid>
+            </>
     );
 };
 

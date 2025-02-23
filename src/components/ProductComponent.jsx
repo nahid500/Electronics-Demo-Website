@@ -2,18 +2,13 @@ import image from '../images/p1.jpeg'
 
 
 
-const Products = () => {
+const ProductComponent = () => {
     const products = [
         { id: 1, name: 'Wireless Headphones', category: 'Electronics', price: 59.99, stock: 120, image: 'https://via.placeholder.com/200x200.png?text=Wireless+Headphones' },
-        { id: 2, name: 'LED Desk Lamp', category: 'Furniture', price: 19.99, stock: 85, image: 'https://via.placeholder.com/200x200.png?text=LED+Desk+Lamp' },
         { id: 3, name: 'Smart Watch', category: 'Electronics', price: 149.99, stock: 200, image: 'https://via.placeholder.com/200x200.png?text=Smart+Watch' },
         { id: 4, name: 'Bluetooth Speaker', category: 'Electronics', price: 39.99, stock: 50, image: 'https://via.placeholder.com/200x200.png?text=Bluetooth+Speaker' },
         { id: 5, name: 'Portable Charger', category: 'Electronics', price: 29.99, stock: 75, image: 'https://via.placeholder.com/200x200.png?text=Portable+Charger' },
-        { id: 6, name: 'Yoga Mat', category: 'Fitness', price: 15.99, stock: 150, image: 'https://via.placeholder.com/200x200.png?text=Yoga+Mat' },
         { id: 7, name: 'Leather Wallet', category: 'Accessories', price: 25.99, stock: 60, image: 'https://via.placeholder.com/200x200.png?text=Leather+Wallet' },
-        { id: 8, name: 'Running Shoes', category: 'Footwear', price: 69.99, stock: 90, image: 'https://via.placeholder.com/200x200.png?text=Running+Shoes' },
-        { id: 9, name: 'Coffee Maker', category: 'Appliances', price: 99.99, stock: 40, image: 'https://via.placeholder.com/200x200.png?text=Coffee+Maker' },
-        { id: 10, name: 'Electric Kettle', category: 'Appliances', price: 39.99, stock: 30, image: 'https://via.placeholder.com/200x200.png?text=Electric+Kettle' },
         { id: 11, name: 'Smartphone Case', category: 'Accessories', price: 12.99, stock: 200, image: 'https://via.placeholder.com/200x200.png?text=Smartphone+Case' },
         { id: 12, name: 'Gaming Mouse', category: 'Electronics', price: 49.99, stock: 110, image: 'https://via.placeholder.com/200x200.png?text=Gaming+Mouse' },
         { id: 13, name: 'Sunglasses', category: 'Accessories', price: 19.99, stock: 180, image: 'https://via.placeholder.com/200x200.png?text=Sunglasses' },
@@ -32,7 +27,7 @@ const Products = () => {
 
     return (
         <div className="container mx-auto px-4 py-6">
-            <h1 className="text-3xl font-bold text-center mb-6">Product Categories</h1>
+            <h1 className="text-3xl font-bold text-center mb-6">Best Selling Products</h1>
 
             {Object.keys(groupedProducts).map((category, index) => (
                 <div key={index} className="mb-8">
@@ -68,4 +63,4 @@ const Products = () => {
     );
 };
 
-export default Products;
+export default ProductComponent;

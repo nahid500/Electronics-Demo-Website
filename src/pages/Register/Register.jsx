@@ -1,11 +1,14 @@
 import { useState } from "react";
-import Navbar from "../components/NavBar";
+import Navbar from "../../components/NavBar";
 import { NavLink } from "react-router-dom";
 
-const Login = () => {
+
+const Register = () => {
     const [formData, setFormData] = useState({
+        name: "",
         email: "",
         password: "",
+        confirmPassword: "",
     });
 
     const [error, setError] = useState("");
@@ -17,20 +20,14 @@ const Login = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (formData.email === "" || formData.password === "") {
-            setError("Please fill in all fields.");
-            return;
-        }
-
-        // Dummy validation (Replace with actual backend authentication)
-        if (formData.email !== "test@example.com" || formData.password !== "password123") {
-            setError("Invalid email or password.");
+        if (formData.password !== formData.confirmPassword) {
+            setError("Passwords do not match!");
             return;
         }
 
         setError("");
-        console.log("User Logged In:", formData);
-        // Redirect to the dashboard or homepage after successful login
+        console.log("User Registered:", formData);
+        // Here, you would typically send the data to your backend
     };
 
     return (
@@ -39,11 +36,25 @@ const Login = () => {
 
             <div className="flex justify-center items-center min-h-screen bg-gray-100">
                 <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
-                    <h2 className="text-2xl font-bold text-center mb-4">Login</h2>
+                    <h2 className="text-2xl font-bold text-center mb-4">Register</h2>
 
                     {error && <p className="text-red-500 text-center">{error}</p>}
 
                     <form onSubmit={handleSubmit} className="space-y-4">
+                        {/* Name Field */}
+                        <div>
+                            <label className="block font-medium">Full Name</label>
+                            <input
+                                type="text"
+                                name="name"
+                                value={formData.name}
+                                onChange={handleChange}
+                                required
+                                className="w-full px-3 py-2 border rounded-lg"
+                                placeholder="Enter your name"
+                            />
+                        </div>
+
                         {/* Email Field */}
                         <div>
                             <label className="block font-medium">Email</label>
@@ -72,33 +83,39 @@ const Login = () => {
                             />
                         </div>
 
-                        {/* Forgot Password Link */}
-                        <div className="text-right">
-                            <NavLink to="/forgot-password" className="text-blue-500">
-                                Forgot Password?
-                            </NavLink>
+                        {/* Confirm Password Field */}
+                        <div>
+                            <label className="block font-medium">Confirm Password</label>
+                            <input
+                                type="password"
+                                name="confirmPassword"
+                                value={formData.confirmPassword}
+                                onChange={handleChange}
+                                required
+                                className="w-full px-3 py-2 mb-2 border rounded-lg"
+                                placeholder="Confirm your password"
+                            />
                         </div>
+                        
+                        <NavLink 
+                            to="/login"
+                            className="text-red-500" 
+                        >
+                            Already Registered? Click here to Login
+                        </NavLink>
 
-                        {/* Login Button */}
+                        {/* Submit Button */}
                         <button
                             type="submit"
                             className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition"
                         >
-                            Login
+                            Register
                         </button>
                     </form>
-
-                    {/* Register Redirect */}
-                    <div className="text-center mt-4">
-                        <span>Don't have an account? </span>
-                        <NavLink to="/register" className="text-blue-500">
-                            Register here
-                        </NavLink>
-                    </div>
                 </div>
             </div>
         </>
     );
 };
 
-export default Login;
+export default Register;
