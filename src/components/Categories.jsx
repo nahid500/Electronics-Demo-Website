@@ -12,7 +12,7 @@ const categories = [
 const CategoriesCard = () => {
     return (
         <>
-        <h1 className="text-3xl font-bold text-center mb-6" >Product Categories</h1>
+        <h1 className="text-3xl font-bold text-center py-5 bg-gray-100 mb-6" >Product Categories</h1>
         <Grid container spacing={3} justifyContent="center" alignItems="center" style={{ minHeight: "20vh", backgroundColor: "#f5f5f5", padding: "20px" }}>
             {categories.map((category, index) => (
                 <Grid item xs={12} sm={6} md={4} lg={2} key={index}>
