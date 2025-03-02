@@ -33,7 +33,7 @@ const Products = () => {
             <Image />
 
             <div className="container mx-auto px-4 py-6">
-                <h1 className="text-3xl font-bold text-center mb-6">Products</h1>
+                {/* <h1 className="text-3xl font-bold text-center mb-6">Products</h1> */}
 
                 {Object.keys(groupedProducts).map((category) => (
                     <div key={category} className="mb-8">
