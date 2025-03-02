@@ -14,7 +14,18 @@ const Products = () => {
         { id: 1, name: 'Wireless Headphones', category: 'Electronics', price: 59.99, stock: 120 },
         { id: 2, name: 'LED Desk Lamp', category: 'Furniture', price: 19.99, stock: 85 },
         { id: 3, name: 'Smart Watch', category: 'Electronics', price: 149.99, stock: 200 },
-        { id: 4, name: 'Bluetooth Speaker', category: 'Electronics', price: 39.99, stock: 50 }
+        { id: 4, name: 'Bluetooth Speaker', category: 'Electronics', price: 39.99, stock: 50 },
+        { id: 5, name: 'Portable Charger', category: 'Electronics', price: 29.99, stock: 75 },
+        { id: 6, name: 'Yoga Mat', category: 'Fitness', price: 15.99, stock: 150 },
+        { id: 7, name: 'Leather Wallet', category: 'Accessories', price: 25.99, stock: 60 },
+        { id: 8, name: 'Running Shoes', category: 'Footwear', price: 69.99, stock: 90 },
+        { id: 9, name: 'Coffee Maker', category: 'Appliances', price: 99.99, stock: 40 },
+        { id: 10, name: 'Electric Kettle', category: 'Appliances', price: 39.99, stock: 30 },
+        { id: 11, name: 'Smartphone Case', category: 'Accessories', price: 12.99, stock: 200 },
+        { id: 12, name: 'Gaming Mouse', category: 'Electronics', price: 49.99, stock: 110 },
+        { id: 13, name: 'Sunglasses', category: 'Accessories', price: 19.99, stock: 180 },
+        { id: 14, name: 'Wristwatch', category: 'Accessories', price: 99.99, stock: 150 },
+        { id: 15, name: 'Digital Camera', category: 'Electronics', price: 299.99, stock: 20 }
     ];
 
     // Group products by category
