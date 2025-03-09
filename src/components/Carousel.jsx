@@ -27,7 +27,7 @@
     };
 
     return (
-        <div className="bg-teal-500 mb-0">
+        <div className="bg-cyan-500 mb-0">
 
         <div className="relative w-full max-w-3xl mx-auto bg-slate-200">
         {/* Slides */}
