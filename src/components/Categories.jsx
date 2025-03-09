@@ -1,12 +1,11 @@
 import { Card, CardContent, Typography, Grid } from "@mui/material";
-import { FaClock, FaTabletAlt, FaBluetoothB, FaHeadphonesAlt, FaCogs } from "react-icons/fa";
+import { FaClock, FaTabletAlt, FaHeadphonesAlt, FaCamera } from "react-icons/fa";
 
 const categories = [
-    { name: "Smartwatches", icon: <FaClock size={40} color="#FF5722" /> },
-    { name: "Tablets", icon: <FaTabletAlt size={40} color="#00BCD4" /> },
-    { name: "Speakers", icon: <FaBluetoothB size={40} color="#009688" /> },
-    { name: "Headsets", icon: <FaHeadphonesAlt size={40} color="#FFC107" /> },
-    { name: "Accessories", icon: <FaCogs size={40} color="#8E24AA" /> },
+    { name: "Watches", icon: <FaClock size={40} color="#FF5722" /> },
+    { name: "Phones", icon: <FaTabletAlt size={40} color="#00BCD4" /> },
+    { name: "Headphones", icon: <FaHeadphonesAlt size={40} color="#FFC107" /> },
+    { name: "Cameras", icon: <FaCamera size={40} color="#8E24AA" /> },
 ];
 
 const CategoriesCard = () => {

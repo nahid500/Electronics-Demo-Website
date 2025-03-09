@@ -83,7 +83,7 @@ const Footer = () => {
 
             {/* Copyright */}
             <p className="text-center mt-6">
-                &copy; {new Date().getFullYear()} | WeShop.com | All rights reserved.
+                &copy; {new Date().getFullYear()} | ElectroMart | All rights reserved.
             </p>
         </footer>
     );

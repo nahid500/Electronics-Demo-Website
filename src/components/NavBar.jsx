@@ -12,7 +12,8 @@ const Navbar = () => {
 
             <div>
                 <ul className="flex justify-center px-10 gap-6 items-center font-medium">
-                    {["Home", "Products", "Cart", "Login", "Register"].map((item, index) => (
+                    {/* {["Home", "Products", "Cart", "Login", "Register"].map((item, index) => ( */}
+                    {["Home", "Cart", "Login", "Register"].map((item, index) => (
                         <li key={index}>
                             <NavLink 
                                 to={`/${item.toLowerCase() === 'home' ? '' : item.toLowerCase()}`} 

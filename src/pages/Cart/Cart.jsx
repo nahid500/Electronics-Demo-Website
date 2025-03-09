@@ -47,8 +47,8 @@ const Cart = () => {
 
                 {/* Back to Products */}
                 <div className="text-center mt-8">
-                    <Link to="/products" className="text-blue-500 text-lg font-bold">
-                        🔙 Back to Products
+                    <Link to="/" className="text-blue-500 text-lg font-bold">
+                        🔙 Back to Home
                     </Link>
                 </div>
             </div>
