@@ -1,4 +1,4 @@
-import logo from '../images/logo2.png';
+import logo from '../../public/vite.svg';
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
