@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom'; // Import Link for routing
 import logo from '../../public/vite.svg';
-
 
 const Footer = () => {
     return (
@@ -23,13 +23,21 @@ const Footer = () => {
                 <div className="text-center sm:text-left">
                     <h4 className="font-semibold text-lg">Company</h4>
                     <ul className="space-y-2">
-                        <li className="hover:underline cursor-pointer">About Us</li>
-                        <li className="hover:underline cursor-pointer">Career</li>
-                        <li className="hover:underline cursor-pointer">Contact Us</li>
-                        <li className="hover:underline cursor-pointer">Privacy Policy</li>
-                        <li className="hover:underline cursor-pointer">WeShop Certified</li>
-                        <li className="hover:underline cursor-pointer">Terms & Conditions</li>
-                        <li className="hover:underline cursor-pointer">Next/Same Day Delivery TC</li>
+                        <li className="hover:underline cursor-pointer">
+                            <Link to="/about-us">About Us</Link>
+                        </li>
+                        <li className="hover:underline cursor-pointer">
+                            <Link to="/career">Career</Link>
+                        </li>
+                        <li className="hover:underline cursor-pointer">
+                            <Link to="/contact-us">Contact Us</Link>
+                        </li>
+                        <li className="hover:underline cursor-pointer">
+                            <Link to="/privacy-policy">Privacy Policy</Link>
+                        </li>
+                        <li className="hover:underline cursor-pointer">
+                            <Link to="/terms-and-conditions">Terms & Conditions</Link>
+                        </li>
                     </ul>
                 </div>
 
@@ -37,11 +45,13 @@ const Footer = () => {
                 <div className="text-center sm:text-left">
                     <h4 className="font-semibold text-lg">My Account</h4>
                     <ul className="space-y-2">
-                        <li className="hover:underline cursor-pointer">Sign In</li>
+                        <li className="hover:underline cursor-pointer">
+                        <Link to="/login">Sign In</Link>
+                        </li>
+                        <li className="hover:underline cursor-pointer">
+                            <Link to ="/register">Register </Link>
+                            </li>
                         <li className="hover:underline cursor-pointer">Orders</li>
-                        <li className="hover:underline cursor-pointer">Addresses</li>
-                        <li className="hover:underline cursor-pointer">My Wishlist</li>
-                        <li className="hover:underline cursor-pointer">Order History</li>
                         <li className="hover:underline cursor-pointer">Track My Order</li>
                     </ul>
                 </div>
@@ -52,8 +62,6 @@ const Footer = () => {
                     <ul className="space-y-2">
                         <li className="hover:underline cursor-pointer">Payment Methods</li>
                         <li className="hover:underline cursor-pointer">Support Center</li>
-                        <li className="hover:underline cursor-pointer">How To Shop On WeShop</li>
-                        <li className="hover:underline cursor-pointer">Featured Recommendation</li>
                         <li className="hover:underline cursor-pointer">Cancellation, Return & Refund</li>
                     </ul>
                 </div>
@@ -74,12 +82,6 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-
-            {/* Payment Methods */}
-            {/* <div className="text-center mt-6">
-                <p className="font-semibold">We're using safe payment for</p>
-                <img src="/payment-methods.png" alt="Payment Methods" className="mx-auto mt-2 w-48 h-auto" />
-            </div> */}
 
             {/* Copyright */}
             <p className="text-center mt-6">

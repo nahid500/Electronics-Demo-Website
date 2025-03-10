@@ -3,18 +3,14 @@ import { FaClock, FaTabletAlt, FaHeadphonesAlt, FaCamera } from "react-icons/fa"
 import { useNavigate } from "react-router-dom";
 
 const categories = [
-    { name: "Watches", icon: <FaClock size={40} color="#FF5722" /> },
-    { name: "Phones", icon: <FaTabletAlt size={40} color="#00BCD4" /> },
-    { name: "Headphones", icon: <FaHeadphonesAlt size={40} color="#FFC107" /> },
-    { name: "Cameras", icon: <FaCamera size={40} color="#8E24AA" /> },
+    { name: "Watches", icon: <FaClock size={40} color="#FF5722" />, path: "/products/watches" },
+    { name: "Phones", icon: <FaTabletAlt size={40} color="#00BCD4" />, path: "/products/phones" },
+    { name: "Headphones", icon: <FaHeadphonesAlt size={40} color="#FFC107" />, path: "/products/headphones" },
+    { name: "Cameras", icon: <FaCamera size={40} color="#8E24AA" />, path: "/products/cameras" },
 ];
 
 const CategoriesCard = () => {
     const navigate = useNavigate();
-
-    const handleCategoryClick = (category) => {
-        navigate(`/products/${category}`);
-    };
 
     return (
         <>
@@ -37,7 +33,7 @@ const CategoriesCard = () => {
                                 cursor: "pointer",
                                 "&:hover": { boxShadow: 6 },
                             }}
-                            onClick={() => handleCategoryClick(category.name)}
+                            onClick={() => navigate(category.path)}
                         >
                             {category.icon}
                             <CardContent>
