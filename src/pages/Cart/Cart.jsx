@@ -4,7 +4,7 @@ import Navbar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 
 const Cart = () => {
-    const { cart, removeFromCart, clearCart } = useCart();
+    const { cart, removeFromCart, clearCart, payNow } = useCart();
 
     return (
         <>
@@ -36,6 +36,12 @@ const Cart = () => {
                                 ${cart.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2)}
                             </span>
                         </div>
+                        <button
+                            className="w-full bg-green-500 text-white py-2 mt-4 rounded hover:bg-green-700"
+                            onClick={payNow}
+                        >
+                            Pay Now
+                        </button>
                         <button
                             className="w-full bg-red-500 text-white py-2 mt-4 rounded hover:bg-red-700"
                             onClick={clearCart}

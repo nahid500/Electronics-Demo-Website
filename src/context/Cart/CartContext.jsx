@@ -41,8 +41,19 @@ export const CartProvider = ({ children }) => {
     // Function to clear cart
     const clearCart = () => setCart([]);
 
+    // Function to simulate payment success
+    const payNow = () => {
+        if (cart.length === 0) {
+            alert("Your cart is empty. Add items before proceeding to payment.");
+            return;
+        }
+
+        alert("Payment Successful! Thank you for your purchase.");
+        clearCart(); // Empty cart after successful payment
+    };
+
     return (
-        <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart }}>
+        <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart, payNow }}>
             {children}
         </CartContext.Provider>
     );

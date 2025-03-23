@@ -49,19 +49,9 @@ function App() {
 
 
 
-                    {/* <Route path="/weshop-certified" element={<WeShopCertified />} />
-                    <Route path="/support-center" element={<SupportCenter />} />
-                    <Route path="/how-to-shop" element={<HowToShop />} />
-                    <Route path="/payment-methods" element={<PaymentMethods />} />
-                    <Route path="/cancellation-return-refund" element={<CancellationReturnRefund />} />
-                    <Route path="/delivery-terms" element={<DeliveryTerms />} />
-                    <Route path="/sign-in" element={<SignIn />} />
-                    <Route path="/orders" element={<Orders />} />
-                    <Route path="/addresses" element={<Addresses />} />
-                    <Route path="/wishlist" element={<Wishlist />} />
+                    {/*
                     <Route path="/order-history" element={<OrderHistory />} />
                     <Route path="/track-order" element={<TrackOrder />} /> */}
-
 
                     <Route element={<PrivateOutlet />}>
                         <Route path="/dashboard" element={<Dashboard />} />
