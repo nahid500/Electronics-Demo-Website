@@ -23,6 +23,8 @@ const HomePage = () => {
             
             <ProductComponent/>
 
+            <Image/>
+
             <Partners/>
             
             <Footer/>

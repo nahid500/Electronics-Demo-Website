@@ -60,9 +60,17 @@ const Footer = () => {
                 <div className="text-center sm:text-left">
                     <h4 className="font-semibold text-lg">Customer Service</h4>
                     <ul className="space-y-2">
+                        <Link to = '/payment-methods'>
                         <li className="hover:underline cursor-pointer">Payment Methods</li>
+                        </Link>
+                        
+                        <Link to = '/support-center'>
                         <li className="hover:underline cursor-pointer">Support Center</li>
+                        </Link>
+
+                        <Link to = '/refund'>
                         <li className="hover:underline cursor-pointer">Cancellation, Return & Refund</li>
+                        </Link>
                     </ul>
                 </div>
             </div>

@@ -1,65 +1,48 @@
-import pt1 from '../images/pt1.jpeg';
-import pt2 from '../images/pt2.jpeg';
-import pt3 from '../images/pt3.png';
-import pt4 from '../images/pt4.jpeg';
-import pt5 from '../images/pt5.jpeg';
-import pt6 from '../images/pt6.png';
-import pt7 from '../images/pt7.png';
-import pt8 from '../images/pt8.jpeg';
-import pt9 from '../images/pt9.jpeg';
+import pt1 from '../images/samsung.png';
+import pt2 from '../images/apple.png';
+import pt3 from '../images/redmi.png';
+import pt4 from '../images/realme.png';
+import pt5 from '../images/rolex.png';
+import pt6 from '../images/hikvision.png';
+
 
 const Partners = () => {
     const partners = [
         { 
-            id: 11, name: 'Sonali Bank', location: 'Bangladesh', 
-            website: 'https://www.sonalibank.com.bd', 
+            id: 11, name: 'Samsung', location: 'Korea', 
+            website: 'https://www.samsung.com/bd/', 
             image: pt1 
         },
         { 
-            id: 12, name: 'Dutch-Bangla Bank', location: 'Bangladesh', 
-            website: 'https://www.dutchbanglabank.com', 
+            id: 12, name: 'Apple Inc.', location: 'USA', 
+            website: 'https://www.apple.com/', 
             image: pt2 
         },
         { 
-            id: 13, name: 'BRAC Bank', location: 'Bangladesh', 
-            website: 'https://www.bracbank.com', 
+            id: 13, name: 'Redmi', location: 'Bangladesh', 
+            website: 'https://www.mi.com/bd/product-list/', 
             image: pt3 
         },
         { 
-            id: 14, name: 'Islami Bank Bangladesh', location: 'Bangladesh', 
-            website: 'https://www.islamibankbd.com', 
-            image: pt4 
-        },
-        { 
-            id: 15, name: 'Prime Bank', location: 'Bangladesh', 
-            website: 'https://www.primebank.com.bd', 
-            image: pt5
-        },
-        { 
-            id: 16, name: 'United Commercial Bank', location: 'Bangladesh', 
-            website: 'https://www.ucb.com.bd', 
+            id: 16, name: 'Realme', location: 'Bangladesh', 
+            website: 'https://www.realme.com/bd/', 
             image: pt6 
         },
         { 
-            id: 17, name: 'Eastern Bank', location: 'Bangladesh', 
-            website: 'https://www.ebl.com.bd', 
-            image: pt7
+            id: 14, name: 'Hik-Vision', location: 'UK', 
+            website: 'https://www.hikvision.com/en/', 
+            image: pt4 
         },
         { 
-            id: 18, name: 'City Bank', location: 'Bangladesh', 
-            website: 'https://www.thecitybank.com', 
-            image: pt8 
-        },
-        { 
-            id: 19, name: 'Standard Chartered Bangladesh', location: 'Bangladesh', 
-            website: 'https://www.sc.com/bd', 
-            image: pt9
+            id: 15, name: 'Rolex', location: 'Bangladesh', 
+            website: 'https://hikvisionbd.net/', 
+            image: pt5
         },
     ];
 
     return (
         <div className="container mx-auto px-4 py-6">
-            <h1 className="text-3xl font-bold text-center mb-6">Our Banking Partners</h1>
+            <h1 className="text-3xl font-bold text-center mb-6">Our Branding Parteners</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
                 {partners.map((partner) => (
                     <div key={partner.id} className="p-4 border rounded-lg shadow-lg bg-white text-center">

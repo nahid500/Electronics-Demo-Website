@@ -18,6 +18,9 @@ import Career from "./pages/FooterPages/Career";
 import ContactUs from "./pages/FooterPages/ContactUs";
 import TermsConditions from "./pages/FooterPages/TermsConditions";
 import PrivacyPolicy from "./pages/FooterPages/PrivacyPolicy";
+import PaymentMethods from "./pages/FooterPages/PaymentMethods";
+import SupportCenter from "./pages/FooterPages/SupportCenter.jsx";
+import Refund from "./pages/FooterPages/Refund.jsx";
 
 function App() {
     return (
@@ -40,6 +43,11 @@ function App() {
                     <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                     <Route path="/terms-and-conditions" element={<TermsConditions />} />
                     <Route path="/contact-us" element={<ContactUs />} />
+                    <Route path="/payment-methods" element={<PaymentMethods />} />
+                    <Route path="/support-center" element={<SupportCenter />} />
+                    <Route path="/refund" element={<Refund />} />
+
+
 
                     {/* <Route path="/weshop-certified" element={<WeShopCertified />} />
                     <Route path="/support-center" element={<SupportCenter />} />

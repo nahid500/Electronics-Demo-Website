@@ -1,4 +1,3 @@
-// src/pages/AboutUs.jsx
 
 import Navbar from '../../components/NavBar';
 import PageLayout from '../../components/PageLayout';
